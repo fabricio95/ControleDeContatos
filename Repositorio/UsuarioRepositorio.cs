@@ -9,7 +9,7 @@ namespace ControleDeContatos.Repositorio
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly BancoContext _context;
-        
+
 
         public UsuarioRepositorio(BancoContext bancoContext)
         {
@@ -50,7 +50,7 @@ namespace ControleDeContatos.Repositorio
             _context.SaveChanges();
 
             return usuarioDB;
-            
+
         }
 
         public bool Apagar(int id)
@@ -67,6 +67,16 @@ namespace ControleDeContatos.Repositorio
         }
 
         public void Adicionar(object usuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public UsuarioModel BuscarPorId(int id) 
+        { 
+            throw new NotImplementedException();
+        }
+
+        public void Atualizar(object usuario)
         {
             throw new NotImplementedException();
         }

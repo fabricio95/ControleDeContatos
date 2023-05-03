@@ -11,5 +11,7 @@ namespace ControleDeContatos.Repositorio
         UsuarioModel Atualizar(UsuarioModel usuario);
         bool Apagar(int id);
         void Adicionar(object usuario);
+        UsuarioModel BuscarPorId(int id);
+        void Atualizar(object usuario);
     }
 }
